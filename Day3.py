@@ -23,16 +23,16 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-choice1 = str(input("You' re at the crossroad, where do you want to go? Left or Right?\n")).upper()
-if choice1 == "RIGHT" or "R":
-    choice2 = str(input("Swim or Whait?\n")).upper()
-    if choice2 == "SWIM" or "S":
-      choice3 = str(input("Which Door?\nRed, Black and Green?\n")).upper()
-      if choice3 == "RED" or "R":
+choice1 = str(input('You\' re at the crossroad, where do you want to go? "Left" or "Right"?\n')).upper()
+if choice1 == "RIGHT":
+    choice2 = str(input('You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n')).upper()
+    if choice2 == "SWIM":
+      choice3 = str(input('You arrive at the island unharmed. There is a house with 3 doorsWhich Door?\nOne "Red", One "Black" and One "Green?"\n')).upper()
+      if choice3 == "RED":
         print("Burned by Fire.\nGAME OVER!")
-      elif choice3 == "GREEN" or "G":
+      elif choice3 == "GREEN":
         print("Bitten by Snake.\bGAME OVER!")
-      elif choice3 == "BLACK" or "B":
+      elif choice3 == "BLACK":
         print("You find the treasure.\nYou Win!!!")
       else:
         print("Game Over")
