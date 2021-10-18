@@ -1,4 +1,4 @@
-# tip calculator
+#Understanding Data Types and How to Manipulate Stringsr
 print("Welcome to the tip calculator.")
 bill = float(input("What was the total bill?\n$"))
 tip = int(input("What percentage tip would you like to give(10, 12 or 15)?\n"))
