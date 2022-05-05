@@ -1,5 +1,5 @@
 from replit import clear
-from art_martelo import logo
+from Art_Martelo import logo
 print("Welcome the Secret Auction.")
 print(logo)
 bids = {}

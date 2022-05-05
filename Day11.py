@@ -15,12 +15,12 @@ for _ in range(2):
   computer_cards.append(deal_cards())
 
 def calculate_score(cards):
-    return sum(cards)
     if sum(cards) == 21 and len(cards) == 2:
         return 0
-    if sum(cards) > 21 and 11 in cards:
+    if 11 in cards and sum(cards) > 21:
         cards.remove(11)
         cards.append(1)
+        return sum(cards)
 
 def compare(user_score, computer_score):
     if user_score == computer_score:
