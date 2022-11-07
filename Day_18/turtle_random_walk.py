@@ -1,10 +1,11 @@
 from turtle import Turtle
 import random
 
-tim = Turtle()
-tim.shape("turtle")
-tim.width(width=10)
-tim.speed(1)
+t = Turtle()
+t.shape("turtle")
+t.width(width=10) # or t.pensize(15)
+t.speed(2)
+directions = [0, 90, 180, 270]
 colors = ["yellow", "gold", "orange", "red", "maroon", "violet", "magenta", "purple", "navy", "blue", "skyblue",
                 "cyan", "turquoise", "lightgreen", "green", "darkgreen", "chocolate", "brown", "black", "gray"]
 
@@ -12,9 +13,9 @@ colors = ["yellow", "gold", "orange", "red", "maroon", "violet", "magenta", "pur
 def make_snake (size):
     count = 0
     while count < size:
-        tim.color(random.choice(colors))
-        tim.forward(random.randint(20, 50))
-        tim.setheading(random.choice([90, 180, 270, 360]))
+        t.color(random.choice(colors))
+        t.forward(random.randint(20, 50))
+        t.setheading(random.choice(directions))
         count += 1
 
 make_snake(50)
