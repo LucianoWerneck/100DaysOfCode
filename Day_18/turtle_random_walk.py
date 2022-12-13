@@ -1,4 +1,4 @@
-from turtle import Turtle
+from turtle import *
 import random
 
 t = Turtle()
