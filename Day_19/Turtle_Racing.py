@@ -5,7 +5,6 @@ is_race_on = False
 new_turtle = Turtle()
 scr = Screen()
 
-
 scr.setup(width=500, height=400)
 user_bet = scr.textinput(title="Make your bet", prompt="Which turtle will win the race ? Enter a color: ")
 colors = ["red", "blue", "yellow", "orange", "green", "purple"]
@@ -13,6 +12,7 @@ y_positions = [-100, -60, -20, 20, 60, 100]
 all_turtles = []
 new_turtle. speed(3)
 
+#Creating a Turtles, Positions and Colors
 for index in range(0, 6):
     new_turtle = Turtle(shape="turtle")
     new_turtle.reset()
@@ -21,6 +21,7 @@ for index in range(0, 6):
     new_turtle.color(colors[index])
     all_turtles.append(new_turtle)
 
+#Process of the Racing
 if user_bet:
     is_race_on = True
 
