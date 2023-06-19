@@ -3,6 +3,7 @@ import random
 
 class Food(Turtle):
 
+
     def color_food_random(self):
         colors = ["red", "blue", "green", "cyan", "yellow", "pink", "purple", "gold", "magenta"]
         self.color(random.choice(colors))
