@@ -2,6 +2,7 @@ from turtle import Turtle
 
 ALIGMENT = "center"
 FONT = ("Arial", 24, "normal")
+
 class Scoreboard(Turtle):
 
     def __init__(self):
