@@ -14,7 +14,7 @@ scoreboard = Scoreboard()
 
 # Command Key
 screen.listen()
-screen.onkey(player.move_up, "Up")
+screen.onkey(player.go_up, "Up")
 
 game_is_on = True
 while game_is_on:
@@ -23,7 +23,6 @@ while game_is_on:
 
     car_manager.create_cars()
     car_manager.move_cars()
-
 
     #Detect collision with car
     for car in car_manager.all_cars:
@@ -36,5 +35,6 @@ while game_is_on:
         player.go_to_start()
         car_manager.level_up()
         scoreboard.increase_level()
+
 
 screen.exitonclick()
